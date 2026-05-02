@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as UnitsRouteImport } from './routes/units'
 import { Route as MarketsRouteImport } from './routes/markets'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 
 const VisionRoute = VisionRouteImport.update({
@@ -29,6 +30,11 @@ const MarketsRoute = MarketsRouteImport.update({
   path: '/markets',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -37,12 +43,14 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/markets': typeof MarketsRoute
   '/units': typeof UnitsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/markets': typeof MarketsRoute
   '/units': typeof UnitsRoute
   '/vision': typeof VisionRoute
@@ -50,20 +58,22 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/markets': typeof MarketsRoute
   '/units': typeof UnitsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/markets' | '/units' | '/vision'
+  fullPaths: '/' | '/contact' | '/markets' | '/units' | '/vision'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/markets' | '/units' | '/vision'
-  id: '__root__' | '/' | '/markets' | '/units' | '/vision'
+  to: '/' | '/contact' | '/markets' | '/units' | '/vision'
+  id: '__root__' | '/' | '/contact' | '/markets' | '/units' | '/vision'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
   MarketsRoute: typeof MarketsRoute
   UnitsRoute: typeof UnitsRoute
   VisionRoute: typeof VisionRoute
@@ -92,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -104,6 +121,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
   MarketsRoute: MarketsRoute,
   UnitsRoute: UnitsRoute,
   VisionRoute: VisionRoute,
