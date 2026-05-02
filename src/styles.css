@@ -109,6 +109,9 @@
   --gradient-gold: linear-gradient(135deg, oklch(0.78 0.14 80), oklch(0.65 0.15 75));
   --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, oklch(0.15 0.06 260) 40%, transparent);
   --shadow-gold: 0 10px 40px -10px color-mix(in oklab, oklch(0.78 0.14 80) 50%, transparent);
+  --shadow-soft: 0 1px 2px color-mix(in oklab, oklch(0.16 0.06 260) 6%, transparent), 0 8px 24px -10px color-mix(in oklab, oklch(0.16 0.06 260) 12%, transparent);
+  --shadow-card: 0 2px 4px color-mix(in oklab, oklch(0.16 0.06 260) 5%, transparent), 0 24px 48px -20px color-mix(in oklab, oklch(0.16 0.06 260) 18%, transparent);
+  --shadow-lift: 0 4px 8px color-mix(in oklab, oklch(0.16 0.06 260) 6%, transparent), 0 32px 64px -16px color-mix(in oklab, oklch(0.16 0.06 260) 25%, transparent), 0 0 0 1px color-mix(in oklab, oklch(0.58 0.14 72) 18%, transparent);
 
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
