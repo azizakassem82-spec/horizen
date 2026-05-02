@@ -82,12 +82,16 @@ function Index() {
         </div>
       </section>
 
-      {/* Doctrine — quiet quote */}
-      <section className="max-w-3xl mx-auto px-6 pb-32 text-center">
-        <div className="text-gold-deep text-[11px] tracking-[0.3em] mb-6">عقيدة المشروع</div>
-        <p className="text-2xl md:text-3xl font-display text-primary leading-relaxed">
-          نموذج إنتاج مشترك جزائري–أمريكي يفتح أبواب القارة الإفريقية على الأسواق العالمية.
-        </p>
+      {/* Doctrine — measured warm surface */}
+      <section className="bg-surface border-y border-border">
+        <div className="max-w-3xl mx-auto px-6 py-24 md:py-32 text-center">
+          <div className="w-10 h-px bg-gold-deep mx-auto mb-8" />
+          <div className="text-gold-deep text-[11px] tracking-[0.3em] mb-6">عقيدة المشروع</div>
+          <p className="text-2xl md:text-3xl font-display text-primary leading-relaxed">
+            نموذج إنتاج مشترك جزائري–أمريكي يفتح أبواب القارة الإفريقية على الأسواق العالمية.
+          </p>
+          <div className="mt-10 text-[11px] tracking-[0.35em] text-gold-deep">USA · AFR GROWTH</div>
+        </div>
       </section>
 
       <SiteFooter />
