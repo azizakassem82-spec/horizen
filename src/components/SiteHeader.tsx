@@ -14,13 +14,13 @@ const links = [
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-primary/95 border-b border-gold/20">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Mostaganem Horizon 2027" width={48} height={48} className="rounded-full ring-2 ring-gold/40" />
-          <div className="hidden sm:block text-primary-foreground">
-            <div className="font-display font-bold text-lg leading-tight">Mostaganem Horizon 2027</div>
-            <div className="text-xs text-gold tracking-wider">USA · AFR GROWTH</div>
+          <img src={logo} alt="Mostaganem Horizon 2027" width={44} height={44} className="rounded-full" />
+          <div className="hidden sm:block">
+            <div className="font-display font-bold text-base leading-tight text-primary">Mostaganem Horizon 2027</div>
+            <div className="text-[10px] text-gold-deep tracking-[0.2em] mt-0.5">USA · AFR GROWTH</div>
           </div>
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
@@ -28,8 +28,8 @@ export function SiteHeader() {
             <Link
               key={l.to}
               to={l.to}
-              className="px-4 py-2 text-sm text-primary-foreground/80 hover:text-gold transition-colors rounded-md"
-              activeProps={{ className: "px-4 py-2 text-sm text-gold rounded-md bg-gold/10" }}
+              className="px-4 py-2 text-sm text-muted-foreground hover:text-primary transition-colors rounded-md"
+              activeProps={{ className: "px-4 py-2 text-sm text-primary font-bold rounded-md" }}
               activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
@@ -37,7 +37,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <button
-          className="lg:hidden text-primary-foreground p-2"
+          className="lg:hidden text-primary p-2"
           onClick={() => setOpen(!open)}
           aria-label="القائمة"
         >
@@ -45,14 +45,14 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <nav className="lg:hidden border-t border-gold/20 bg-primary px-6 py-4 flex flex-col gap-2">
+        <nav className="lg:hidden border-t border-border bg-background px-6 py-4 flex flex-col gap-2">
           {links.map((l) => (
             <Link
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              className="px-3 py-2 text-primary-foreground/90 hover:text-gold"
-              activeProps={{ className: "px-3 py-2 text-gold" }}
+              className="px-3 py-2 text-muted-foreground hover:text-primary"
+              activeProps={{ className: "px-3 py-2 text-primary font-bold" }}
               activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
