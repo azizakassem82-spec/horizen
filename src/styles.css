@@ -14,6 +14,7 @@
   --color-gold-foreground: var(--gold-foreground);
   --color-gold-deep: var(--gold-deep);
   --color-primary-deep: var(--primary-deep);
+  --color-surface: var(--surface);
 }
 
 /*
@@ -76,31 +77,33 @@
 :root {
   --radius: 0.625rem;
   /* Mostaganem Horizon 2027 — Navy & Gold institutional identity */
-  --background: oklch(0.985 0.005 90);
-  --foreground: oklch(0.18 0.05 260);
+  --background: oklch(1 0 0);                  /* أبيض نقي */
+  --foreground: oklch(0.16 0.05 260);          /* نص داكن (قريب من النيفي) */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.05 260);
+  --card-foreground: oklch(0.16 0.05 260);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.05 260);
-  /* Deep navy */
-  --primary: oklch(0.22 0.07 260);
+  --popover-foreground: oklch(0.16 0.05 260);
+  /* Deep navy — اللون المؤسساتي */
+  --primary: oklch(0.24 0.08 260);
   --primary-foreground: oklch(0.98 0.01 90);
-  --primary-deep: oklch(0.15 0.06 260);
-  /* Royal gold */
-  --gold: oklch(0.78 0.14 80);
+  --primary-deep: oklch(0.16 0.06 260);
+  /* Royal gold — لمسة هوية محسوبة */
+  --gold: oklch(0.74 0.13 78);
   --gold-foreground: oklch(0.18 0.05 260);
-  --gold-deep: oklch(0.65 0.15 75);
-  --secondary: oklch(0.95 0.02 85);
-  --secondary-foreground: oklch(0.22 0.07 260);
-  --muted: oklch(0.95 0.01 260);
-  --muted-foreground: oklch(0.45 0.04 260);
-  --accent: oklch(0.78 0.14 80);
-  --accent-foreground: oklch(0.18 0.05 260);
+  --gold-deep: oklch(0.58 0.14 72);
+  /* أسطح فاتحة جداً للأقسام البديلة */
+  --surface: oklch(0.985 0.006 85);            /* أبيض دافئ خفيف جداً */
+  --secondary: oklch(0.97 0.01 80);
+  --secondary-foreground: oklch(0.24 0.08 260);
+  --muted: oklch(0.975 0.005 260);
+  --muted-foreground: oklch(0.48 0.03 260);
+  --accent: oklch(0.97 0.02 80);
+  --accent-foreground: oklch(0.24 0.08 260);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.88 0.02 260);
-  --input: oklch(0.92 0.02 260);
-  --ring: oklch(0.78 0.14 80);
+  --border: oklch(0.92 0.01 260);              /* فواصل خفيفة جداً */
+  --input: oklch(0.93 0.01 260);
+  --ring: oklch(0.58 0.14 72);
 
   --gradient-hero: linear-gradient(135deg, oklch(0.15 0.06 260) 0%, oklch(0.22 0.07 260) 50%, oklch(0.28 0.08 260) 100%);
   --gradient-gold: linear-gradient(135deg, oklch(0.78 0.14 80), oklch(0.65 0.15 75));
