@@ -29,11 +29,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mostaganem Horizon 2027 — مركب صناعي للملابس الجاهزة" },
+      { name: "description", content: "Mostaganem Horizon 2027: مشروع شراكة استراتيجية جزائرية–أمريكية لتصنيع الملابس الجاهزة، وفق عقيدة USA-AFR GROWTH." },
+      { name: "author", content: "Mostaganem Horizon 2027" },
+      { property: "og:title", content: "Mostaganem Horizon 2027" },
+      { property: "og:description", content: "مركب صناعي متكامل للملابس الجاهزة — شراكة استراتيجية الجزائر · الولايات المتحدة." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -43,6 +43,9 @@ export const Route = createRootRoute({
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@400;500;700&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -52,7 +55,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <HeadContent />
       </head>
