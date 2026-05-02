@@ -1,34 +1,52 @@
-import logo from "@/assets/logo.png";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export function SiteFooter() {
+  const { t } = useLanguage();
+  const f = t.footer;
+
   return (
-    <footer className="border-t border-border mt-12">
-      <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+    <footer className="bg-black text-white mt-0">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+        {/* Brand */}
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <img src={logo} alt="" width={40} height={40} className="rounded-full" />
+          <div className="flex items-center gap-3 mb-5">
+            <img src="/dng-logo.png" alt="DNG+" className="h-14 w-auto object-contain" />
             <div>
-              <div className="font-display font-bold text-primary text-sm">Mostaganem Horizon 2027</div>
-              <div className="text-[10px] text-gold-deep tracking-[0.2em] mt-0.5">USA · AFR GROWTH</div>
+              <div className="font-display font-bold text-white text-sm leading-tight">
+                Mostaganem Horizon 2027
+              </div>
+              <div className="text-[10px] text-yellow-400 tracking-[0.2em] mt-0.5">
+                USA · AFR GROWTH
+              </div>
             </div>
           </div>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            مركب صناعي متكامل لإنتاج الملابس الجاهزة، بشراكة استراتيجية بين الجزائر والولايات المتحدة.
-          </p>
+          <p className="text-sm leading-relaxed text-white/70">{f.description}</p>
         </div>
+
+        {/* HQ */}
         <div>
-          <h4 className="text-primary font-bold mb-3 text-sm">المقر</h4>
-          <p className="text-sm text-muted-foreground">مستغانم — الجزائر</p>
-          <p className="text-sm mt-1 text-muted-foreground">contact@mostaganem-horizon.dz</p>
+          <h4 className="text-yellow-400 font-bold mb-4 text-sm tracking-widest uppercase">
+            {f.hqTitle}
+          </h4>
+          <p className="text-sm text-white/80">{f.hqLine1}</p>
+          <p className="text-sm mt-2 text-white/80">{f.hqLine2}</p>
+          <p className="text-sm mt-2 text-white/60">contact@mostaganem-horizon.dz</p>
         </div>
+
+        {/* Partnership */}
         <div>
-          <h4 className="text-primary font-bold mb-3 text-sm">الشراكة</h4>
-          <p className="text-sm text-muted-foreground">عقيدة USA-AFR GROWTH</p>
-          <p className="text-sm mt-1 text-muted-foreground">B2B · شراكات وتعاقدات كبرى</p>
+          <h4 className="text-yellow-400 font-bold mb-4 text-sm tracking-widest uppercase">
+            {f.partnerTitle}
+          </h4>
+          <p className="text-sm text-white/80">{f.partnerLine1}</p>
+          <p className="text-sm mt-2 text-white/80">{f.partnerLine2}</p>
+          <p className="text-sm mt-2 text-white/80">{f.partnerLine3}</p>
         </div>
       </div>
-      <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Mostaganem Horizon 2027. جميع الحقوق محفوظة.
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10 py-5 text-center text-xs text-white/40">
+        © {new Date().getFullYear()} Mostaganem Horizon 2027 · DNG+ SPA. {f.copyright}.
       </div>
     </footer>
   );
