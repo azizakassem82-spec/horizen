@@ -80,6 +80,55 @@ export const translations = {
       partnerLine3: "الجزائر · إفريقيا · أوروبا · الشرق الأوسط",
       copyright: "جميع الحقوق محفوظة",
     },
+    // Vision
+    vision: {
+      metaTitle: "الرؤية الاستراتيجية — Mostaganem Horizon 2027",
+      metaDesc: "اكتشف مشروع Mostaganem Horizon 2027، رؤية استراتيجية لصناعة الملابس بمعايير دولية تجسد الشراكة الجزائرية-الأمريكية.",
+      badge: "رؤية استراتيجية",
+      title: "Horizon 2027",
+      desc: "مشروع Mostaganem Horizon 2027 يجسّد الإرادة الصارمة نحو التكامل الاقتصادي بين الجزائر والولايات المتحدة الأمريكية، لإنشاء قطب صناعي مرجعي في إفريقيا لإنتاج وتصدير الملابس الجاهزة.",
+      features: [
+        { title: "هدف 2027", desc: "مصنع كامل ومستقل يعمل بأقصى طاقة استيعابية لاستهداف الأسواق الكبرى." },
+        { title: "الشراكة الاستراتيجية", desc: "نقل المعرفة والتكنولوجيا بفضل الخبرة الأمريكية ورأس المال البشري الجزائري." },
+        { title: "الابتكار الصناعي", desc: "أحدث التقنيات لضمان جودة استثنائية." },
+        { title: "استقلالية الطاقة", desc: "محطة طاقة شمسية خاصة لتشغيل المصنع بشكل مستدام." }
+      ],
+      imgBadge: "USA · AFR GROWTH",
+      imgText: "تكامل اقتصادي بين القارتين عبر صناعة الملابس الجاهزة.",
+      localKnowHowBadge: "صناعة بمعرفة محلية",
+      localKnowHowTitle: "من الفكرة إلى التصدير، كل قطعة تُحاك بدقة.",
+      localKnowHowDesc: "نجمع بين الكفاءة الجزائرية والتكنولوجيا الأمريكية لنقدم منتجات بمعايير عالمية."
+    },
+    // Units
+    units: {
+      metaTitle: "وحدات الإنتاج — Mostaganem Horizon 2027",
+      metaDesc: "تعرف على وحدات الإنتاج المتخصصة في Mostaganem Horizon 2027، سلسلة متكاملة من القص إلى التصدير.",
+      badge: "وحدات الإنتاج",
+      title: "الملابس الجاهزة",
+      desc: "سلسلة وحدات إنتاج متخصصة من القص حتى التصدير، بمواصفات عالمية واستقلالية كاملة في الطاقة.",
+      items: [
+        { n: "01", title: "وحدة القص الرقمي", desc: "أنظمة CAD/CAM لقص دقيق للأقمشة بأقل نسبة هدر." },
+        { n: "02", title: "وحدة الخياطة الصناعية", desc: "خطوط خياطة آلية بطاقة إنتاج عالية ومرونة في الموديلات." },
+        { n: "03", title: "وحدة التشطيب والكي", desc: "معالجات نهائية للأقمشة لضمان مظهر احترافي وجودة ملمس." },
+        { n: "04", title: "مراقبة الجودة", desc: "بروتوكولات صارمة وفق المعايير الدولية ISO قبل التعبئة." },
+        { n: "05", title: "التعبئة والتغليف", desc: "تجهيز الشحنات وفق متطلبات كل سوق تصديري." },
+        { n: "06", title: "اللوجستيك والتصدير", desc: "ربط مباشر بالموانئ والمنافذ الدولية لتسريع التسليم." }
+      ]
+    },
+    // Markets
+    markets: {
+      metaTitle: "الأسواق المستهدفة — Mostaganem Horizon 2027",
+      metaDesc: "الأسواق الرئيسية التي يستهدفها المشروع انطلاقًا من موقع مستغانم الاستراتيجي.",
+      badge: "الأسواق",
+      title: "المستهدفة",
+      desc: "موقع مستغانم الاستراتيجي يجعل المشروع نقطة انطلاق نحو أربعة أسواق رئيسية، بدعم من عقيدة USA-AFR GROWTH.",
+      items: [
+        { tag: "السوق الوطني", title: "تلبية الطلب الجزائري", desc: "بناء ثقة المستهلك المحلي بمنتج ذي جودة عالية.", flag: "🇩🇿", img: "/dz.jpg" },
+        { tag: "التصدير", title: "السوق الإفريقية (ZLECAF)", desc: "تصدير الملابس نحو الساحل وغرب إفريقيا عبر بوابات لوجستية.", flag: "🌍", img: "/shoes.jpg" },
+        { tag: "التصدير", title: "أوروبا", desc: "استغلال القرب الجغرافي وحوض البحر الأبيض المتوسط للتصدير اللوجستي السريع.", flag: "🇪🇺", img: "/port.jpg" },
+        { tag: "التصدير", title: "الشرق الأوسط", desc: "شراكات مع موزعين في الخليج لتوريد الملابس وتدعيم العلامة التجارية.", flag: "🇦🇪", img: "/workers.jpg" }
+      ]
+    },
     // Contact
     contact: {
       title: "اتصل",
@@ -166,6 +215,52 @@ export const translations = {
       partnerLine3: "Algérie · Afrique · Europe · Moyen-Orient",
       copyright: "Tous droits réservés",
     },
+    vision: {
+      metaTitle: "Vision Stratégique — Mostaganem Horizon 2027",
+      metaDesc: "Découvrez Mostaganem Horizon 2027, une vision stratégique pour une production de confection aux normes internationales.",
+      badge: "VISION STRATÉGIQUE",
+      title: "Horizon 2027",
+      desc: "Le projet Mostaganem Horizon 2027 incarne la volonté d'intégration économique entre l'Algérie et les États-Unis d'Amérique pour créer un pôle industriel de référence en Afrique.",
+      features: [
+        { title: "Objectif 2027", desc: "Une usine complète et indépendante fonctionnant à pleine capacité." },
+        { title: "Partenariat Stratégique", desc: "Transfert de savoir-faire avec l'expertise américaine." },
+        { title: "Innovation Industrielle", desc: "Les dernières technologies pour garantir une qualité exceptionnelle." },
+        { title: "Autonomie Énergétique", desc: "Station solaire intégrée pour un fonctionnement durable." }
+      ],
+      imgBadge: "USA · AFR GROWTH",
+      imgText: "Intégration économique entre les deux continents via l'industrie textile.",
+      localKnowHowBadge: "SAVOIR-FAIRE LOCAL",
+      localKnowHowTitle: "De l'idée à l'exportation, chaque pièce est minutieusement confectionnée.",
+      localKnowHowDesc: "Nous allions la compétence algérienne et la technologie américaine pour des normes mondiales."
+    },
+    units: {
+      metaTitle: "Unités de Production — Mostaganem Horizon 2027",
+      metaDesc: "Découvrez nos unités spécialisées dans la confection pour l'exportation.",
+      badge: "UNITÉS DE PRODUCTION",
+      title: "Prêt-à-porter",
+      desc: "Une série d'unités de production spécialisées, de la coupe à l'exportation, aux standards mondiaux.",
+      items: [
+        { n: "01", title: "Unité de Coupe Numérique", desc: "Systèmes CAD/CAM pour une coupe de précision et un gaspillage minimal." },
+        { n: "02", title: "Couture Industrielle", desc: "Lignes de couture automatisées offrant une grande capacité de production." },
+        { n: "03", title: "Finition et Repassage", desc: "Traitement final garantissant un aspect professionnel de qualité." },
+        { n: "04", title: "Contrôle Qualité", desc: "Protocoles stricts selon les normes internationales ISO." },
+        { n: "05", title: "Emballage et Conditionnement", desc: "Préparation des expéditions selon les exigences de chaque marché." },
+        { n: "06", title: "Logistique et Export", desc: "Connexion directe aux ports pour accélérer la livraison." }
+      ]
+    },
+    markets: {
+      metaTitle: "Marchés Cibles — Mostaganem Horizon 2027",
+      metaDesc: "Les marchés clés ciblés par le projet à partir de notre pole de Mostaganem.",
+      badge: "MARCHÉS",
+      title: "Cibles",
+      desc: "La position stratégique de Mostaganem fait du projet un point de départ vers quatre marchés majeurs.",
+      items: [
+        { tag: "MARCHÉ NATIONAL", title: "Répondre à la demande", desc: "Fournir un produit de haute qualité au marché local.", flag: "🇩🇿", img: "/dz.jpg" },
+        { tag: "EXPORT", title: "Marché Africain (ZLECAF)", desc: "Exportation vers le Sahel et l'Afrique de l'Ouest.", flag: "🌍", img: "/shoes.jpg" },
+        { tag: "EXPORT", title: "Europe", desc: "Distribution logistique rapide grâce à la proximité méditerranéenne.", flag: "🇪🇺", img: "/port.jpg" },
+        { tag: "EXPORT", title: "Moyen-Orient", desc: "Partenariats avec des distributeurs dans les pays du Golfe.", flag: "🇦🇪", img: "/workers.jpg" }
+      ]
+    },
     contact: {
       title: "Contactez-",
       titleHighlight: "nous",
@@ -250,6 +345,52 @@ export const translations = {
       partnerLine2: "B2B · Major contracts & partnerships",
       partnerLine3: "Algeria · Africa · Europe · Middle East",
       copyright: "All rights reserved",
+    },
+    vision: {
+      metaTitle: "Strategic Vision — Mostaganem Horizon 2027",
+      metaDesc: "Discover Mostaganem Horizon 2027, a strategic vision bridging Algeria and the US through world-class garment manufacturing.",
+      badge: "STRATEGIC VISION",
+      title: "Horizon 2027",
+      desc: "The Mostaganem Horizon 2027 project embodies the firm commitment to economic integration between Algeria and the United States, creating an industrial hub for Africa.",
+      features: [
+        { title: "Target 2027", desc: "A fully independent factory operating at maximum capacity targeting major markets." },
+        { title: "Strategic Partnership", desc: "Knowledge and technology transfer uniting American expertise with Algerian human capital." },
+        { title: "Industrial Innovation", desc: "State-of-the-art technology ensuring exceptional product quality." },
+        { title: "Energy Independence", desc: "Dedicated solar power station ensuring sustainable factory operations." }
+      ],
+      imgBadge: "USA · AFR GROWTH",
+      imgText: "Economic integration bridging continents through the garment industry.",
+      localKnowHowBadge: "LOCAL KNOW-HOW",
+      localKnowHowTitle: "From concept to export, every piece is crafted with precision.",
+      localKnowHowDesc: "Combining Algerian competence with American technology to deliver global standards."
+    },
+    units: {
+      metaTitle: "Production Units — Mostaganem Horizon 2027",
+      metaDesc: "Explore our specialized production units for world-class garment manufacturing.",
+      badge: "PRODUCTION UNITS",
+      title: "Garment Manufacturing",
+      desc: "A series of specialized production facilities from cutting to export, operating with full energy independence.",
+      items: [
+        { n: "01", title: "Digital Cutting Unit", desc: "CAD/CAM systems for precise fabric cutting with minimal waste." },
+        { n: "02", title: "Industrial Sewing", desc: "Automated sewing lines offering high production capacity and flexibility." },
+        { n: "03", title: "Finishing & Pressing", desc: "Final fabric treatments ensuring professional look and feel." },
+        { n: "04", title: "Quality Control", desc: "Strict protocols under international ISO standards before packing." },
+        { n: "05", title: "Packaging", desc: "Shipment preparation meeting the requirements of every export market." },
+        { n: "06", title: "Logistics & Export", desc: "Direct connection to ports to accelerate delivery." }
+      ]
+    },
+    markets: {
+      metaTitle: "Target Markets — Mostaganem Horizon 2027",
+      metaDesc: "The core markets targeted by our strategic project in Mostaganem.",
+      badge: "MARKETS",
+      title: "Target Regions",
+      desc: "Mostaganem's strategic location makes the project an ideal launchpad to four major markets, backed by the USA-AFR GROWTH doctrine.",
+      items: [
+        { tag: "NATIONAL MARKET", title: "Meeting Algerian Demand", desc: "Building local consumer trust with a high-quality product.", flag: "🇩🇿", img: "/dz.jpg" },
+        { tag: "EXPORT", title: "African Market (AfCFTA)", desc: "Exporting garments to the Sahel and West Africa.", flag: "🌍", img: "/shoes.jpg" },
+        { tag: "EXPORT", title: "Europe", desc: "Leveraging proximity and the Mediterranean for fast logistics.", flag: "🇪🇺", img: "/port.jpg" },
+        { tag: "EXPORT", title: "Middle East", desc: "Establishing distribution partnerships across Gulf countries.", flag: "🇦🇪", img: "/workers.jpg" }
+      ]
     },
     contact: {
       title: "Contact",

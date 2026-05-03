@@ -5,7 +5,7 @@ export function SiteFooter() {
   const f = t.footer;
 
   return (
-    <footer className="bg-black text-white mt-0">
+    <footer className="bg-primary text-primary-foreground mt-0">
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
@@ -15,7 +15,7 @@ export function SiteFooter() {
               <div className="font-display font-bold text-white text-sm leading-tight">
                 Mostaganem Horizon 2027
               </div>
-              <div className="text-[10px] text-yellow-400 tracking-[0.2em] mt-0.5">
+              <div className="text-[10px] text-gold tracking-[0.2em] mt-0.5">
                 USA · AFR GROWTH
               </div>
             </div>
@@ -25,7 +25,7 @@ export function SiteFooter() {
 
         {/* HQ */}
         <div>
-          <h4 className="text-yellow-400 font-bold mb-4 text-sm tracking-widest uppercase">
+          <h4 className="text-gold font-bold mb-4 text-sm tracking-widest uppercase">
             {f.hqTitle}
           </h4>
           <p className="text-sm text-white/80">{f.hqLine1}</p>
@@ -35,7 +35,7 @@ export function SiteFooter() {
 
         {/* Partnership */}
         <div>
-          <h4 className="text-yellow-400 font-bold mb-4 text-sm tracking-widest uppercase">
+          <h4 className="text-gold font-bold mb-4 text-sm tracking-widest uppercase">
             {f.partnerTitle}
           </h4>
           <p className="text-sm text-white/80">{f.partnerLine1}</p>

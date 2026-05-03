@@ -41,6 +41,11 @@ export const Route = createRootRoute({
     ],
     links: [
       {
+        rel: "icon",
+        type: "image/png",
+        href: "/dng-logo.png",
+      },
+      {
         rel: "stylesheet",
         href: appCss,
       },
