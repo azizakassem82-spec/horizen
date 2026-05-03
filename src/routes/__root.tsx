@@ -1,7 +1,5 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
 import { LanguageProvider } from "@/lib/LanguageContext";
-
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -26,55 +24,14 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mostaganem Horizon 2027 — مركب صناعي للملابس الجاهزة" },
-      { name: "description", content: "Mostaganem Horizon 2027: مشروع شراكة استراتيجية جزائرية–أمريكية لتصنيع الملابس الجاهزة، وفق عقيدة USA-AFR GROWTH." },
-      { name: "author", content: "Mostaganem Horizon 2027" },
-      { property: "og:title", content: "Mostaganem Horizon 2027" },
-      { property: "og:description", content: "مركب صناعي متكامل للملابس الجاهزة — شراكة استراتيجية الجزائر · الولايات المتحدة." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-    ],
-    links: [
-      {
-        rel: "icon",
-        type: "image/png",
-        href: "/dng-logo.png",
-      },
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@400;500;700&display=swap" },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="ar" dir="rtl">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <LanguageProvider>
+      <Outlet />
+    </LanguageProvider>
+  );
 }
